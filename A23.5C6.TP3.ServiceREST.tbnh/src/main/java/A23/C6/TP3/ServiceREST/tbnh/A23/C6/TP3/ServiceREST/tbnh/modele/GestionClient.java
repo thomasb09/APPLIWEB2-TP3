@@ -1,14 +1,18 @@
 package A23.C6.TP3.ServiceREST.tbnh.A23.C6.TP3.ServiceREST.tbnh.modele;
 
 import A23.C6.TP3.ServiceREST.tbnh.A23.C6.TP3.ServiceREST.tbnh.service.CalculCheminService;
+import A23.C6.TP3.ServiceREST.tbnh.A23.C6.TP3.ServiceREST.tbnh.service.LectureFichierJSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class GestionClient {
 
     private ListClientService listClientService;
     private CalculCheminService calculCheminService;
+    private LectureFichierJSON lectureFichierJSON;
 
     @Autowired
     public GestionClient(ListClientService listClientService, CalculCheminService calculCheminService) {
@@ -27,5 +31,9 @@ public class GestionClient {
 
     public String calculerChemin(String listAdresse) {
         return routeDuJour(calculCheminService.calculerChemin(listAdresse).block());
+    }
+
+    public List<Client> listClients() {
+        return lectureFichierJSON.lireFichierJSON();
     }
 }
