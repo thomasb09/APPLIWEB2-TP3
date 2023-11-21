@@ -8,18 +8,19 @@ import reactor.core.publisher.Mono;
 @Service
 public class CalculCheminService {
 
-    private final WebClient webClient;
+    private final WebClient webClient = null;
 
     @Autowired
     public CalculCheminService(WebClient.Builder webClientBuilder) {
         //https://www.graphhopper.com/blog/2017/10/23/how-to-use-the-routing-api-in-java/
-        this.webClient = webClientBuilder.baseUrl("http://TODO").build();
+//        this.webClient = webClientBuilder.baseUrl("http://TODO").build();
     }
 
     public String calculerChemin(String listAdresse) {
-        return webClient.get()
-                .uri("/TODO")
-                .retrieve()
-                .bodyToMono(String.class).block();
+//        return webClient.get()
+//                .uri("/TODO")
+//                .retrieve()
+//                .bodyToMono(String.class).block();
+        return "";
     }
 }
