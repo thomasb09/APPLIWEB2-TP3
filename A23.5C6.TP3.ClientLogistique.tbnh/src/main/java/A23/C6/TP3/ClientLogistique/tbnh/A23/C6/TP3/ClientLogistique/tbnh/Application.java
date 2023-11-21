@@ -20,7 +20,7 @@ import java.util.List;
 @SpringBootApplication
 public class Application extends javafx.application.Application {
 
-	private static final String BASE_URL = "http://172.20.45.21:8080/a23.form.9.war-0.0.1-SNAPSHOT/";
+	private static final String BASE_URL = "http://169.254.86.231:8080/serviceREST-0.0.1-SNAPSHOT/";
 	RestTemplate restTemplate = new RestTemplate();
 
 	@Override
@@ -31,7 +31,6 @@ public class Application extends javafx.application.Application {
 		RestTemplate restTemplate = new RestTemplate();
 
 		List<Client> listClient = restTemplate.getForObject(BASE_URL + "listClients", List.class);
-//		List<Client> listClient = Arrays.asList(new Client("nom1", "adresse1"), new Client("nom2", "adresse2"));
 		System.out.println("Retrieved list: " + listClient);
 		ObservableList<Client> items = FXCollections.observableArrayList(listClient);
 		ObservableList<Client> itemSelected = FXCollections.observableArrayList();
