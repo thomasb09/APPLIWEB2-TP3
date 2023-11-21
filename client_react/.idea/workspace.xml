@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43b6cf29-4419-4f2d-893b-d09b984566ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../serviceREST/src/main/resources/clients.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../serviceREST/src/main/resources/entrepot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/page.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serviceREST/src/main/java/A23/C6/TP3/SeviceREST/TBNH/serviceREST/service/CalculCheminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serviceREST/src/main/java/A23/C6/TP3/SeviceREST/TBNH/serviceREST/service/CalculCheminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serviceREST/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../serviceREST/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/2166982/Desktop/APPLIWEB2-TP3/A23.5C6.TP3.ClientLogistique.tbnh",
+    "last_opened_file_path": "C:/Users/2166982/Desktop/APPLIWEB2-TP3/client_react",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +77,7 @@
       <updated>1700240542079</updated>
       <workItem from="1700240543049" duration="798000" />
       <workItem from="1700593795011" duration="420000" />
+      <workItem from="1700599219784" duration="608000" />
     </task>
     <servers />
   </component>
