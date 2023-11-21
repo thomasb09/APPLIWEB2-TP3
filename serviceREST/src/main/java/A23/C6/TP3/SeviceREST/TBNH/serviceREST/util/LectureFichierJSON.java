@@ -23,7 +23,7 @@ public class LectureFichierJSON {
         JSONParser jsonP = new JSONParser();
         try {
             ClassLoader classLoader = LectureFichierJSON.class.getClassLoader();
-            File file = new File(classLoader.getResource("clients.json").getFile());
+            File file = new File("C:\\data\\clients.json");
 
             JSONObject jsonObject = (JSONObject) jsonP.parse(new FileReader(file));
 
