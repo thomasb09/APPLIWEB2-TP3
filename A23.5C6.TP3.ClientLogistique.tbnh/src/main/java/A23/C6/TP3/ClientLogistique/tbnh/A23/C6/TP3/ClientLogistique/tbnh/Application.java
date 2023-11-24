@@ -11,16 +11,20 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 @SpringBootApplication
 public class Application extends javafx.application.Application {
 
-	private static final String BASE_URL = "http://172.20.45.21:8080/serviceREST-0.0.1-SNAPSHOT/";
+	private static final String BASE_URL = "http://127.0.0.1:8080/";
 	RestTemplate restTemplate = new RestTemplate();
 
 	@Override
@@ -30,8 +34,20 @@ public class Application extends javafx.application.Application {
 
 		RestTemplate restTemplate = new RestTemplate();
 
-		List<Client> listClient = restTemplate.getForObject(BASE_URL + "listClients", List.class);
+		List<Client> listClient = restTemplate.exchange(
+				BASE_URL + "listClients",
+				HttpMethod.GET,
+				null,
+				new ParameterizedTypeReference<List<Client>>() {}
+		).getBody();
 		System.out.println("Retrieved list: " + listClient);
+//		List<Client> listClient = new ArrayList<>();
+//		for (LinkedHashMap map : listClientMap) {
+//			Client client = new Client((String) map.get("nom"),(String) map.get("adresse"), (String) map.get("lat"),(String) map.get("lng"));
+//			// Effectuez la conversion appropriée des valeurs du LinkedHashMap vers les propriétés du Client
+//			// ...
+//			listClient.add(client);
+//		}
 		ObservableList<Client> items = FXCollections.observableArrayList(listClient);
 		ObservableList<Client> itemSelected = FXCollections.observableArrayList();
 
@@ -57,12 +73,10 @@ public class Application extends javafx.application.Application {
 			}
 		});
 
-		ListView<Client> listView = new ListView<>(itemSelected);
-
 		Button button = new Button("Claculer le chemin du jour");
 
 		button.setOnAction(event -> {
-			postClientDuJOur(listView);
+			postClientDuJOur(listView2);
 		});
 
 		HBox hbox = new HBox(listView1, addButton, removeButton, listView2);
@@ -79,11 +93,11 @@ public class Application extends javafx.application.Application {
 	}
 
 	private void postClientDuJOur(ListView<Client> listView) {
-		List<Client> selectedItem = listView.getSelectionModel().getSelectedItems();
+		List<Client> selectedItem = listView.getItems().stream().toList();
 
 		if (selectedItem != null) {
 			System.out.println("Méthode appelée avec l'objet : " + selectedItem);
-			ResponseEntity<List> postResponse = restTemplate.postForEntity(BASE_URL + "/personne", selectedItem, List.class);
+			ResponseEntity<List> postResponse = restTemplate.postForEntity(BASE_URL + "/calculerChemin", selectedItem, List.class);
 			System.out.println("Post Response: " + postResponse.getBody());
 		} else {
 			System.out.println("Aucun objet sélectionné");
