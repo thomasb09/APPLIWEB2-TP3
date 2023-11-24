@@ -19,14 +19,6 @@ import java.util.List;
 @Service
 public class CalculCheminService {
 
-    private WebClient webClient = null;
-
-    @Autowired
-    public CalculCheminService(WebClient.Builder webClientBuilder) {
-        //https://www.graphhopper.com/blog/2017/10/23/how-to-use-the-routing-api-in-java/
-        this.webClient = webClientBuilder.baseUrl("https://graphhopper.com").build();
-    }
-
     public String calculerChemin(List<Client> listClient) {
 
         String retour = "";

@@ -1,64 +1,64 @@
 {
 	"clients" : [
-	{
-		"nom": "IGA Supermarché Pierre Jobidon de Limoilou inc.",
-		"adresse": "825 4e Avenue, Québec, QC G1J 3A6",
-		"lat": 46.826180,
-		"lng": -71.227470
-	},
-	{
-		"nom": "Magasin Latulippe",
-		"adresse": "1228 Rue de la Concorde, Carrefour St-Romuald, QC G6W 0M7",
-		"lat": 46.730080,
-		"lng": -71.259660
-	},
-	{
-		"nom":"Hôpital Fleurimont (CHUS)",
-		"adresse": "3001 12e Avenue N, Sherbrooke, QC J1H 5H3",
-		"lat": 45.447041,
-		"lng": -71.870247
-	},
-	{
-		"nom": "Hotel Le Principal (Granby)",
-		"adresse": "700 Rue Principale, Granby, QC J2G 2Y4",
-		"lat": 45.409330,
-		"lng": -72.745440
-	},
-	{
-		"nom": "La Petite Grange",
-		"adresse": "415 Chem. Larocque, Salaberry-de-Valleyfield, QC J6T 4C6",
-		"lat": 45.2419833025589,
-		"lng": -74.12542208796214
-	},
-	{
-		"nom": "Hôpital Le Royer",
-		"adresse": "635 Bd Joliet, Baie-Comeau, QC G5C 1P1",
-		"lat": 49.190756912484176,
-		"lng": -68.25257024685418
-	},
-	{
-		"nom": "Auberge du Grand Fleuve",
-		"adresse": "131 Rue Principale, Métis-sur-Mer, QC G0J 1S0",
-		"lat": 48.684216004059536,
-		"lng": -67.96358953338144
-	},
-	{
-		"nom": "Le Domaine Du Ranch",
-		"adresse": "591 QC-169, Sainte-Jeanne-d'Arc, QC G0W 1E0",
-		"lat": 48.84070654496808,
-		"lng": -72.12908238919897
-	},
-	{
-		"nom": "Centre des visiteurs du parc de la Gatineau",
-		"adresse": "33 Chem. Scott, Chelsea, QC J9B 1R5",
-		"lat": 45.50582691359648,
-		"lng": -75.81202033166802
-	},
-	{
-		"nom": "Cité de l'Or",
-		"adresse": "90 Av. Perrault, Val-d'Or, QC J9P 2G3",
-		"lat": 48.094858171242144,
-		"lng": -77.76501727389034
-	}
-   ]
+		{
+			"nom": "IGA Supermarché Pierre Jobidon de Limoilou inc.",
+			"adresse": "825 4e Avenue, Québec, QC G1J 3A6",
+			"lat": "46.826180",
+			"lng": "-71.227470"
+		},
+		{
+			"nom": "Magasin Latulippe",
+			"adresse": "1228 Rue de la Concorde, Carrefour St-Romuald, QC G6W 0M7",
+			"lat": "46.730080",
+			"lng": "-71.259660"
+		},
+		{
+			"nom":"Hôpital Fleurimont (CHUS)",
+			"adresse": "3001 12e Avenue N, Sherbrooke, QC J1H 5H3",
+			"lat": "45.447041",
+			"lng": "-71.870247"
+		},
+		{
+			"nom": "Hotel Le Principal (Granby)",
+			"adresse": "700 Rue Principale, Granby, QC J2G 2Y4",
+			"lat": "45.409330",
+			"lng": "-72.745440"
+		},
+		{
+			"nom": "La Petite Grange",
+			"adresse": "415 Chem. Larocque, Salaberry-de-Valleyfield, QC J6T 4C6",
+			"lat": "45.2419833025589",
+			"lng": "-74.12542208796214"
+		},
+		{
+			"nom": "Hôpital Le Royer",
+			"adresse": "635 Bd Joliet, Baie-Comeau, QC G5C 1P1",
+			"lat": "49.190756912484176",
+			"lng": "-68.25257024685418"
+		},
+		{
+			"nom": "Auberge du Grand Fleuve",
+			"adresse": "131 Rue Principale, Métis-sur-Mer, QC G0J 1S0",
+			"lat": "48.684216004059536",
+			"lng": "-67.96358953338144"
+		},
+		{
+			"nom": "Le Domaine Du Ranch",
+			"adresse": "591 QC-169, Sainte-Jeanne-d'Arc, QC G0W 1E0",
+			"lat": "48.84070654496808",
+			"lng": "-72.12908238919897"
+		},
+		{
+			"nom": "Centre des visiteurs du parc de la Gatineau",
+			"adresse": "33 Chem. Scott, Chelsea, QC J9B 1R5",
+			"lat": "45.50582691359648",
+			"lng": "-75.81202033166802"
+		},
+		{
+			"nom": "Cité de l'Or",
+			"adresse": "90 Av. Perrault, Val-d'Or, QC J9P 2G3",
+			"lat": "48.094858171242144",
+			"lng": "-77.76501727389034"
+		}
+	]
 }
