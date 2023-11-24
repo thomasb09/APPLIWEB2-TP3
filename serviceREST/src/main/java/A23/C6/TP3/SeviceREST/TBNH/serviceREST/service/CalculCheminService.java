@@ -112,7 +112,7 @@ public class CalculCheminService {
                             String activityId = activity.get("id").asText();
                             System.out.println("  Activity Type: " + activityType);
                             System.out.println("  Activity ID: " + activityId);
-                            retour += "Client no " + i++ + activityId + "\n";
+                            retour += "Client no " + i++ + ": " + activityId + "\n";
                         }
 
                     }
