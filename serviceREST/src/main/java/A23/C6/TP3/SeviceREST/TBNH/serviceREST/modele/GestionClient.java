@@ -33,8 +33,8 @@ public class GestionClient {
         return listClientService.findAll().get(0).getListe();
     }
 
-    public String calculerChemin(String listAdresse) {
-        return routeDuJour(calculCheminService.calculerChemin(listAdresse));
+    public String calculerChemin(List<Client> listClient) {
+        return routeDuJour(calculCheminService.calculerChemin(listClient));
     }
 
     public List<Client> listClients() {

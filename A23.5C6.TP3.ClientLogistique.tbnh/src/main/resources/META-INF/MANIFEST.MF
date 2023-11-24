@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: A23.C6.TP3.ClientLogistique.tbnh.A23.C6.TP3.ClientLogistique
+ .tbnh.Application
+

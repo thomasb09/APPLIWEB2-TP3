@@ -34,8 +34,10 @@ public class LectureFichierJSON {
 
                 String nom = (String) clientJson.get("nom");
                 String adresse = (String) clientJson.get("adresse");
+                String lat = (String) clientJson.get("lat");
+                String lng = (String) clientJson.get("lng");
 
-                Client client = new Client(nom, adresse);
+                Client client = new Client(nom, adresse, lat, lng);
                 listeClients.add(client);
             }
 

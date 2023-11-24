@@ -83,7 +83,7 @@ public class Application extends javafx.application.Application {
 
 		if (selectedItem != null) {
 			System.out.println("Méthode appelée avec l'objet : " + selectedItem);
-			ResponseEntity<String> postResponse = restTemplate.postForEntity(BASE_URL + "/personne", selectedItem, String.class);
+			ResponseEntity<List> postResponse = restTemplate.postForEntity(BASE_URL + "/personne", selectedItem, List.class);
 			System.out.println("Post Response: " + postResponse.getBody());
 		} else {
 			System.out.println("Aucun objet sélectionné");

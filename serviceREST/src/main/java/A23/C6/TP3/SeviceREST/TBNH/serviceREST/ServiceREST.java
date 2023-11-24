@@ -29,8 +29,8 @@ public class ServiceREST {
     }
 
     @PostMapping("/calculerChemin")
-    public ResponseEntity<String> routeDuJour(@RequestBody String route) {
-        gestionClient.calculerChemin(route);
+    public ResponseEntity<String> routeDuJour(@RequestBody List<Client> clients) {
+        System.out.println(gestionClient.calculerChemin(clients));
         return ResponseEntity.ok().build();
     }
 }
