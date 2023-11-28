@@ -50,7 +50,7 @@
 	<distributionManagement>
 		<repository>
 			<id>Client_Logistique</id>
-			<url>http://127.0.0.1</url>
+			<url>C:\Users\2166982\Desktop\APPLIWEB2-TP3\A23.5C6.TP3.ClientLogistique.tbnh\target</url>
 		</repository>
 	</distributionManagement>
 
