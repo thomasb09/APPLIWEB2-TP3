@@ -13,7 +13,7 @@ function App() {
 
   function getRouteJour(){
     Axios.get("http://172.20.45.21:8080/serviceREST-0.0.1-SNAPSHOT/routeDuJour").then((response) => {
-          setRouteDuJour(response)
+          setRouteDuJour(response.data)
     });
   }
 
