@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>A23.5C6.TP3.ClientLogistique.tbnh</groupId>
 	<artifactId>A23.5C6.TP3.ClientLogistique.tbnh</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>A23.5C6.TP3.ClientLogistique.tbnh</name>
 	<description>A23.5C6.TP3.ClientLogistique.tbnh</description>
 	<properties>
@@ -47,5 +47,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>Client_Logistique</id>
+			<url>http://127.0.0.1</url>
+		</repository>
+	</distributionManagement>
 
 </project>

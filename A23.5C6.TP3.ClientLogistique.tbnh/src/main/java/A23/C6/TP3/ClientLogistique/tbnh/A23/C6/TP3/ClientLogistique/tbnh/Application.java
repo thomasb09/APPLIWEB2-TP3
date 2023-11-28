@@ -24,7 +24,7 @@ import java.util.List;
 @SpringBootApplication
 public class Application extends javafx.application.Application {
 
-	private static final String BASE_URL = "http://127.0.0.1:8080/";
+	private static final String BASE_URL = "http://172.20.45.21:8080/";
 	RestTemplate restTemplate = new RestTemplate();
 
 	@Override
