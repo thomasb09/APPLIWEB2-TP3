@@ -1,0 +1,19 @@
+﻿@model string
+
+<html>
+<head>
+    <title>API Response</title>
+</head>
+<body>
+    <h1>API Response</h1>
+    @if (!string.IsNullOrEmpty(ViewBag.Error))
+    {
+        <p>Error: @ViewBag.Error</p>
+    }
+    else
+    {
+        <p>Result: @Model</p>
+        <p>Result has been written to <a href="/output.html" target="_blank">output.html</a></p>
+    }
+</body>
+</html>
