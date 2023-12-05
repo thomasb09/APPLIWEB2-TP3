@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43b6cf29-4419-4f2d-893b-d09b984566ec" name="Changes" comment="" />
+    <list default="true" id="43b6cf29-4419-4f2d-893b-d09b984566ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../A23.5C6.TP3.ClientLogistique.tbnh/src/main/java/A23/C6/TP3/ClientLogistique/tbnh/A23/C6/TP3/ClientLogistique/tbnh/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A23.5C6.TP3.ClientLogistique.tbnh/src/main/java/A23/C6/TP3/ClientLogistique/tbnh/A23/C6/TP3/ClientLogistique/tbnh/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/2166982/Desktop/APPLIWEB2-TP3/client_react",
+    "last_opened_file_path": "C:/Users/Thomas/OneDrive/Bureau/APPLIWEB2-TP3/client_react",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +78,7 @@
       <workItem from="1700599219784" duration="608000" />
       <workItem from="1700698194754" duration="14000" />
       <workItem from="1701195285571" duration="604000" />
+      <workItem from="1701790754138" duration="45000" />
     </task>
     <servers />
   </component>
